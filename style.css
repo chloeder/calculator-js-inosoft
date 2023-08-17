@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: #ffffff; /* fallback for old browsers */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calculator input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  background: transparent;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  min-width: 300px;
+  box-shadow: none;
+}
+
+.keys input:hover {
+  scale: 1.1;
+}
+
+.calculator .dark-mode-button {
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.dark-mode .dark-mode-button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.dark-mode {
+  background-color: #141e30; /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dark-mode input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.dark-mode .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  min-width: 300px;
+  box-shadow: none;
+}

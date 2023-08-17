@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container p-5 vh-100">
+      <div class="calculator">
+        <div class="display">
+          <div class="row text-center">
+            <div class="col mb-4">
+              <button class="dark-mode-button" onclick="toggleDarkMode()">
+                <i class="bi bi-moon-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" name="output" id="output" />
+            </div>
+          </div>
+        </div>
+        <div class="keys text-center">
+          <div class="row">
+            <div class="col">
+              <input type="button" value="AC" onclick="clearAll()" />
+              <input type="button" value="&plusmn;" onclick="plusMinus()" />
+              <input type="button" value="%" onclick="percent()" />
+              <input
+                type="button"
+                value="&divide;"
+                onclick=" output.value += '/' "
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="button" value="7" onclick=" output.value += 7  " />
+              <input type="button" value="8" onclick=" output.value += 8 " />
+              <input type="button" value="9" onclick=" output.value += 9" />
+              <input
+                type="button"
+                value="&times;"
+                onclick=" output.value += '*' "
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="button" value="4" onclick=" output.value += 4 " />
+              <input type="button" value="5" onclick=" output.value += 5 " />
+              <input type="button" value="6" onclick=" output.value += 6 " />
+              <input
+                type="button"
+                value="&minus;"
+                onclick=" output.value += '-' "
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="button" value="1" onclick=" output.value += 1 " />
+              <input type="button" value="2" onclick=" output.value += 2 " />
+              <input type="button" value="3" onclick=" output.value += 3 " />
+              <input
+                type="button"
+                value="&plus;"
+                onclick=" output.value += '+' "
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="button" value="DE" onclick="backspace()" />
+              <input type="button" value="0" onclick=" output.value += 0 " />
+              <input type="button" value="." onclick="decimal()" />
+              <input type="button" value="&equals;" onclick="calculate()" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
